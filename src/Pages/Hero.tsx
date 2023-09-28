@@ -1,6 +1,7 @@
 import React from "react";
 import { styled } from "styled-components";
 import img2 from "../assets/barcode.png";
+import img3 from "../assets/Screenshot 2023-09-28 144846.png";
 
 const Hero = () => {
   return (
@@ -46,6 +47,9 @@ const Hero = () => {
           <Down>
             <h3>Tutorial</h3>
             <p>Need help to get started?</p>
+            <ImageD>
+              <Img1 src={img3} />
+            </ImageD>
           </Down>
         </Wrapper>
       </Container>
@@ -54,6 +58,14 @@ const Hero = () => {
 };
 
 export default Hero;
+
+const ImageD = styled.div``;
+
+const Img1 = styled.img`
+  width: 100%;
+  height: 220px;
+  cursor: pointer;
+`;
 
 const Bar = styled.div`
   display: flex;
@@ -83,6 +95,7 @@ const Down = styled.div`
   justify-content: start;
   align-items: center;
   flex-direction: column;
+  margin-top: 10px;
 
   h3 {
     font-weight: 300;
@@ -100,6 +113,7 @@ const Lcd = styled.div`
   width: 80%;
   margin: 50px;
   color: #23927e;
+  cursor: pointer;
 `;
 
 const Number1 = styled.div`
@@ -158,11 +172,12 @@ const Get = styled.div`
   justify-content: space-around;
   margin: 35px 0;
   color: white;
+  cursor: pointer;
 `;
 
 const Container = styled.div`
   width: 100%;
-  min-height: 700px;
+  min-height: 800px;
   background-color: #122;
   display: flex;
   align-items: center;
@@ -172,7 +187,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  min-height: 80%;
+  min-height: 300px;
   width: 60%;
   background-color: #fff;
   position: absolute;
@@ -183,6 +198,6 @@ const Wrapper = styled.div`
   padding-top: 40px;
   border-radius: 3px;
   flex-direction: column;
-  margin-top: px;
+  margin-top: 10px;
   top: -110px;
 `;
